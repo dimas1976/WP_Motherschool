@@ -1,6 +1,6 @@
 <?php
 /**
- * motherschool functions and definitions
+ * WP Rig functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -402,3 +402,24 @@ require get_template_directory() . '/inc/customizer.php';
  * @link https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/
  */
 require get_template_directory() . '/pluggable/lazyload/lazyload.php';
+
+/** output Page-Templates */
+function displayPages() {
+    $args = array(
+        'post_type' => 'page',
+        'orderby'   => 'ID',
+        'order'     => 'ASC'
+    );
+    $query = new WP_Query($args);
+    if ( !$query->have_posts() ) {
+        echo 'Die Page-ID ist nicht vergeben';
+    } else {
+        while ( $query->have_posts() ) : $query->the_post();
+            $slug = get_page_template_slug( get_the_ID() );
+            $clear_slug = str_replace('.php', '', $slug);
+            get_template_part($clear_slug);
+        endwhile;
+    }
+
+    wp_reset_query();
+}
