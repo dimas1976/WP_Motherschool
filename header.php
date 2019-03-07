@@ -159,13 +159,16 @@
 </div>
 <nav id="navigation">
     <div class="container navigation__menuItemsContainer">
+	    <?php
+	    $menu_items =(array) wp_get_nav_menu_items('wp_motherschool_menu');
+	    ?>
         <ul class="menu-list">
             <li class="navigation__menuItem" data-scroll="aboutUs">
                 <a href="#">
                     <svg viewBox="0 0 380 370" preserveAspectRatio="xMinYMin meet" class="menu-item-image aboutUs-icon">
                         <use xlink:href="#aboutUs-symbol"></use>
                     </svg>
-                    <span class="menu-item-title menu-item-title--about">О НАС</span>
+                    <span class="menu-item-title menu-item-title--about"><?= $menu_items[0]->{'post_title'}?></span>
                 </a>
             </li>
             <li class="navigation__menuItem" data-scroll="news">
@@ -173,7 +176,7 @@
                     <svg viewBox="0 0 470 330" preserveAspectRatio="xMinYMin meet" class="menu-item-image news-icon">
                         <use xlink:href="#news-symbol"></use>
                     </svg>
-                    <span class="menu-item-title menu-item-title--news">НОВОСТИ</span>
+                    <span class="menu-item-title menu-item-title--news"><?= $menu_items[1]->{'post_title'}?></span>
                 </a>
             </li>
             <li class="navigation__menuItem" data-scroll="gallery">
@@ -181,7 +184,7 @@
                     <svg viewBox="0 0 119 143" preserveAspectRatio="xMidYMin meet" class="menu-item-image gallery-icon">
                         <use xlink:href="#gallery-symbol"></use>
                     </svg>
-                    <span class="menu-item-title menu-item-title--gallery">ГАЛЛЕРЕЯ</span>
+                    <span class="menu-item-title menu-item-title--gallery"><?= $menu_items[2]->{'post_title'} ?></span>
                 </a>
             </li>
             <li class="navigation__menuItem" data-scroll="contact">
@@ -190,9 +193,10 @@
                          class="menu-item-image contact-icon">
                         <use xlink:href="#contact-symbol"></use>
                     </svg>
-                    <span class="menu-item-title menu-item-title--contact">КОНТАКТ</span>
+                    <span class="menu-item-title menu-item-title--contact"><?= $menu_items[3]->{'post_title'}?></span>
                 </a>
             </li>
         </ul>
+
     </div>
 </nav>
