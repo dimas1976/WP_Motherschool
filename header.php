@@ -160,7 +160,7 @@
 <nav id="navigation">
     <div class="container navigation__menuItemsContainer">
 	    <?php
-	    $menu_items =(array) wp_get_nav_menu_items('wp_motherschool_menu');
+	    $menu_items =(array) wp_get_nav_menu_items('wp_motherschool_menu_ru');
 	    ?>
         <ul class="menu-list">
             <li class="navigation__menuItem" data-scroll="aboutUs">
