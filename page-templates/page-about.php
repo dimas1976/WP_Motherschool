@@ -8,7 +8,8 @@
         <div class="cloud cloud--anna right-side">
             <p class="cloud__text cloud__text--anna">
 	            <?php
-                    $post = get_page_by_title('About Anna', OBJECT, 'post');
+                    $article = ( get_bloginfo("language") == 'de-DE' ) ? 'Über Anna' : 'О Анне';
+                    $post = get_page_by_title($article, OBJECT, 'post');
                     echo $post -> post_content;
 	            ?>
             </p>

@@ -423,3 +423,4 @@ function displayPages() {
 
     wp_reset_query();
 }
+

@@ -140,7 +140,9 @@
     </div>
 </div>
 <header id="header">
-    <div class="container header__container"></div>
+    <div class="container header__container">
+        <ul id="language-switcher"><?php pll_the_languages();?></ul>
+    </div>
 </header>
 <div class="hamburger">
     <svg class="hamburger__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 1280"
@@ -160,7 +162,7 @@
 <nav id="navigation">
     <div class="container navigation__menuItemsContainer">
 	    <?php
-	    $menu_items =(array) wp_get_nav_menu_items('wp_motherschool_menu_ru');
+            $menu_items = (pll_current_language() == 'ru') ? (array) wp_get_nav_menu_items('wp_motherschool_menu_ru') : (array) wp_get_nav_menu_items('wp_motherschool_menu_de');
 	    ?>
         <ul class="menu-list">
             <li class="navigation__menuItem" data-scroll="aboutUs">
@@ -168,7 +170,7 @@
                     <svg viewBox="0 0 380 370" preserveAspectRatio="xMinYMin meet" class="menu-item-image aboutUs-icon">
                         <use xlink:href="#aboutUs-symbol"></use>
                     </svg>
-                    <span class="menu-item-title menu-item-title--about"><?= $menu_items[0]->{'post_title'}?></span>
+                    <span class="menu-item-title menu-item-title--about"><?= $menu_items[0]->{'post_title'} ?></span>
                 </a>
             </li>
             <li class="navigation__menuItem" data-scroll="news">
