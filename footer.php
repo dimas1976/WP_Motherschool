@@ -15,14 +15,14 @@
     <div class="footer-container container">
         <div class="footer-container__items">
             <div class="friday">
-                <span class="day">по пятницам</span><br>
+                <span class="day"><?= pll__('по пятницам'); ?></span><br>
                 Kulturpunkt <br>
                 (Barmbek Basch)<br>
                 Wohldorfer Str.30<br>
                 с 15:45 до 17:15
             </div>
             <div class="saturday">
-                <span class="day">по субботам</span><br>
+                <span class="day"><?= pll__('по субботам');?></span><br>
                 Wohlwillstr. 46<br>
                 с 09:00 до 10:30
             </div>
