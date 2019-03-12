@@ -13,7 +13,6 @@
 
 <footer id="footer">
     <div class="footer-container container">
-        <h3 class="headline--small">Часы работы:</h3>
         <div class="footer-container__items">
             <div class="friday">
                 <span class="day">по пятницам</span><br>
