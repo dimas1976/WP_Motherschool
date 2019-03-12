@@ -5,7 +5,7 @@
 ?>
 <section id="contact">
     <div class="contact__container container">
-        <h2 class="headline--big">КОНТАКТ</h2>
+        <h2 class="headline--big"><?= pll__('КОНТАКТ');?></h2>
         <hr class="underline">
         <form class="contact__form">
             <div class="pInputs">

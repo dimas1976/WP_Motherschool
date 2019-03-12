@@ -5,7 +5,7 @@
 ?>
 <section id="news">
     <div class="news__container container">
-        <h2 class="headline--big">НОВОСТИ</h2>
+        <h2 class="headline--big"><?= pll__('НОВОСТИ');?></h2>
         <hr class="underline">
         <div class="messagesContainer">
             <div class="messagesContainer__message">

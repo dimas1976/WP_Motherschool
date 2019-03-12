@@ -13,7 +13,7 @@
                     <svg viewBox="0 0 20 20" preserveAspectRatio="xMidYMin meet" class="button__image">
                         <use xlink:href="#btToYT"></use>
                     </svg>
-                    <span class="button__title">Проиграть видео</span>
+                    <span class="button__title"><?= pll__('Проиграть видео'); ?></span>
                 </div>
             </div>
             <div class="iframe">

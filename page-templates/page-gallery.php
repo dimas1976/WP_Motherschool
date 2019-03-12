@@ -5,7 +5,7 @@
 ?>
 <section id="gallery">
     <div class="gallery__container container">
-        <h2 class="headline--big">ГАЛЛЕРЕЯ</h2>
+        <h2 class="headline--big"><?= pll__('ГАЛЛЕРЕЯ'); ?></h2>
         <hr class="underline">
         <div class="gallery__slider">
             <div class="gallery__screen">
