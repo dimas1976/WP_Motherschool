@@ -502,7 +502,7 @@ body a {
   visibility: hidden;
 }
 .content #aboutUs .cloud .cloud__text {
-  width: 70%;
+  width: 73%;
   opacity: 0;
 }
 .content #aboutUs .cloud .cloud__text--anna {
@@ -624,8 +624,8 @@ body a {
 .cloud__text {
   font-family: 'Montserrat', sans-serif;
   font-size: .85rem;
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 600;
+  font-style: normal;
   color: #fff;
   text-align: center;
   line-height: 1.5em;
@@ -840,7 +840,7 @@ body a {
   margin: auto;
 }
 #aboutUs .aboutUs__container .cloud .cloud__text--anna {
-  padding-top: 7em;
+  padding-top: 6.8em;
   padding-left: 2em;
 }
 #aboutUs .aboutUs__container .cloud .cloud__text--nadja {
