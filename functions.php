@@ -424,3 +424,12 @@ function displayPages() {
     wp_reset_query();
 }
 
+if( function_exists('pll_register_string') ){
+	pll_register_string('button', 'Проиграть видео');
+	pll_register_string('news_headline', 'НОВОСТИ');
+	pll_register_string('gallery_headline', 'ГАЛЛЕРЕЯ');
+	pll_register_string('contact_headline', 'КОНТАКТ');
+	pll_register_string('friday', 'по пятницам');
+	pll_register_string('saturday', 'по субботам');
+}
+
