@@ -556,6 +556,9 @@ body a {
   width: 100%;
   height: 1.6rem;
 }
+.content #contact .contact__container .contact__form input:invalid {
+  border-color: #e21824;
+}
 .content #contact .contact__container .contact__form .selectGroup select {
   width: 45%;
   height: 1.6rem;

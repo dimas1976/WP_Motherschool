@@ -10,8 +10,9 @@
         <form class="contact__form">
             <div class="pInputs">
                 <div>
-                    <label for="pname">Имя родителя<br><input class="contact__form--fieldBorder" type="text"
-                                                              id="pname" name="pname"></label>
+                    <label for="pname">Имя родителя<br>
+                        <input class="contact__form--fieldBorder" type="text" id="pname" name="pname" required pattern="[a-zA-Z]+">
+                    </label>
                 </div>
                 <div>
                     <label for="psurname">Фамилия родителя <br><input class="contact__form--fieldBorder" type="text"
